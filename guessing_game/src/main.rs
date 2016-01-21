@@ -1,7 +1,14 @@
-use std::io; //use is like import, io is the library from the standard library
+extern crate rand;
+
+use std::io; //use is a bit like import, io is the library from the standard library
+use rand::Rng;
 
 fn main() {
     println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1, 101);
+
+    println!("The secret number is: {}", secret_number);
 
     println!("Please input your guess.");
 
