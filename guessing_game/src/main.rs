@@ -18,7 +18,7 @@ fn main() {
     io::stdin().read_line(&mut guess) // calls stdin which takes user input, then save the input to the guess variable, hence why it needs to be mutable. if immutable, we'd write &guess
         .ok().expect("Failed to read line"); 
         //for error handling. ok() and expect() are methods from the 'io::Result' sub-library. ok() lets us assume the program is 
-        //gonna be successful, if error, we just want a generic error not a specific one from Rsut in this case.
+        //gonna be successful, if error, we just want a generic error not a specific one from Rust in this case.
         // expect(): if err, log the string.
         
 
